@@ -4,6 +4,7 @@ using Android.OS;
 using Prism;
 using Prism.Ioc;
 
+
 namespace OfficeAppPrism.Droid
 {
     [Activity(Label = "OfficeAppPrism", Icon = "@mipmap/ic_launcher", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
@@ -17,7 +18,8 @@ namespace OfficeAppPrism.Droid
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
-            LoadApplication(new App(new AndroidInitializer()));
+            LoadApplication(new App(new AndroidInitializer())); 
+          //  LoadApplication(new App(new AndroidInitializer()));
         }
     }
 

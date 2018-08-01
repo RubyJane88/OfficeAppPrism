@@ -1,0 +1,53 @@
+{
+  "departments": [
+    {
+      "id": 1,
+      "name": "Devlin Duldulao",
+      "description": "Information Technology",
+      "head": "John Doe",
+      "code": "RJXT6"
+    },
+    {
+      "id": 2,
+      "name": "Ruby Jane",
+      "description": "Information Technology",
+      "head": "John Doe",
+      "code": "RJXT7"
+    },
+    {
+      "name": "Riley Leyva",
+      "description": "Information Technology",
+      "head": "John Doe",
+      "code": "RJXT7",
+      "id": 3
+    },
+    {
+      "name": "Elijah Leyva",
+      "description": "Information Technology",
+      "head": "John Doe",
+      "code": "RJXT8",
+      "id": 4
+    },
+    {
+      "name": "Kairo Juan Cabagnot",
+      "description": "Information Technology",
+      "head": "John Doe",
+      "code": "RJXT9",
+      "id": 5
+    },
+    {
+      "name": "Raikko Juan Cabagnot",
+      "description": "Information Technology",
+      "head": "John Doe",
+      "code": "RJXT9",
+      "id": 6
+    },
+    {
+      "id": 7,
+      "name": "HR",
+      "description": "Human Resources",
+      "head": "Juan Doe ",
+      "code": "QRST23"
+    }
+  ]
+}
