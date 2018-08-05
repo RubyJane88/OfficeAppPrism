@@ -5,4 +5,23 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:mvvm="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
     Title="Our Office"
-    mvvm:ViewModelLocator.AutowireViewModel="True" />
+    mvvm:ViewModelLocator.AutowireViewModel="True">
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="5" />
+            <RowDefinition Height="*" />
+
+        </Grid.RowDefinitions>
+
+
+
+
+
+
+
+    </Grid>
+
+</ContentPage>

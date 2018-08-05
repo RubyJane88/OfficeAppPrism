@@ -6,4 +6,36 @@
     xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
     Title="Login"
     Padding="20"
-    prism:ViewModelLocator.AutowireViewModel="True" />
+    prism:ViewModelLocator.AutowireViewModel="True">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="2*" />
+        </Grid.RowDefinitions>
+
+        <Label
+            Grid.Row="1"
+            FontSize="Medium"
+            Text="username" />
+
+        <Entry Grid.Row="2" />
+        <Label
+            Grid.Row="3"
+            FontSize="Medium"
+            Text="password" />
+        <Entry Grid.Row="4" IsPassword="True" />
+        <Button
+            Grid.Row="5"
+            BackgroundColor="Aquamarine"
+            Command="{Binding ToMainCommand}"
+            HorizontalOptions="Center"
+            Text="Enter"
+            TextColor="AliceBlue"
+            VerticalOptions="Center" />
+    </Grid>
+</ContentPage>

@@ -41,6 +41,7 @@ namespace OfficeAppPrism
             containerRegistry.RegisterForNavigation<LoginPage>();
             containerRegistry.RegisterForNavigation<MainPage>();
             containerRegistry.RegisterForNavigation<EditDeleteDepartmentPage>();
+            containerRegistry.RegisterForNavigation<NewDepartmentPage>();
            
 
 

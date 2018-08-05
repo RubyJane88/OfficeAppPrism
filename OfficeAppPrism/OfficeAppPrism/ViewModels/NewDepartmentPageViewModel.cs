@@ -28,9 +28,13 @@ namespace OfficeAppPrism.ViewModels
             var newDepartment = new Department();
             {
              
-                        
+                        // Name = NewName 
             }
             
+            //And then serialize the objects before passing to to the http client 
+
+
+
         }
     }
 }

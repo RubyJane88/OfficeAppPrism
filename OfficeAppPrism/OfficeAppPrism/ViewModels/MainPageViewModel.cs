@@ -10,6 +10,7 @@ using System.Text;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using OfficeAppPrism.Models;
+using OfficeAppPrism.Views;
 
 namespace OfficeAppPrism.ViewModels
 {
@@ -53,6 +54,17 @@ namespace OfficeAppPrism.ViewModels
             ObservableDepartments   = new ObservableCollection<Department>(departments); 
 
             base.OnNavigatedTo(parameters);
+        }
+
+        public DelegateCommand<Department> EditDeleteCommand => new DelegateCommand<Department>(EditDelete);
+
+        private void EditDelete(Department objectToBePassed)
+        {
+            var tappedCell = objectToBePassed; 
+            var variableToPass = new NavigationParameters();
+            variableToPass.Add("(^_^) keyAko", tappedCell);
+
+            NavigationService.NavigateAsync("EditDeleteDepartmentPage", variableToPass); 
         }
 
     }
