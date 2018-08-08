@@ -5,7 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
-namespace OfficeAppPrism.iOS
+namespace OfficeApp.iOS
 {
     public class Application
     {

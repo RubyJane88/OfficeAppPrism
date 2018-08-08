@@ -1,16 +1,16 @@
 ﻿using Prism;
 using Prism.Ioc;
-using OfficeAppPrism.ViewModels;
-using OfficeAppPrism.Views;
+using OfficeApp.ViewModels;
+using OfficeApp.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Prism.Unity;
-using NewDepartmentPageViewModel = OfficeAppPrism.ViewModels.NewDepartmentPageViewModel;
+using NewDepartmentPageViewModel = OfficeApp.ViewModels.NewDepartmentPageViewModel;
 using System;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 
-namespace OfficeAppPrism
+namespace OfficeApp
 {
     public partial class App : PrismApplication
     {

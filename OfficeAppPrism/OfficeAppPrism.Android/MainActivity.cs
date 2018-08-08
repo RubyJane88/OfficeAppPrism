@@ -5,7 +5,7 @@ using Prism;
 using Prism.Ioc;
 
 
-namespace OfficeAppPrism.Droid
+namespace OfficeApp.Droid
 {
     [Activity(Label = "OfficeAppPrism", Icon = "@mipmap/ic_launcher", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity

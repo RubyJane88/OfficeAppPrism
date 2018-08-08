@@ -9,10 +9,10 @@ using System.Collections.ObjectModel;
 using System.Text;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using OfficeAppPrism.Models;
-using OfficeAppPrism.Views;
+using OfficeApp.Models;
+using OfficeApp.Views;
 
-namespace OfficeAppPrism.ViewModels
+namespace OfficeApp.ViewModels
 {
     public class MainPageViewModel : ViewModelBase
     {

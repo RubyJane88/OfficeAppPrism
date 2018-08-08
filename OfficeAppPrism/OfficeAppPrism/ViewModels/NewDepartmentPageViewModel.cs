@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Net.Http;
+﻿using System.Net.Http;
+using OfficeApp.Models;
+using Prism.Commands;
 using System.Text;
-using OfficeAppPrism.Models;
-using Prism.Mvvm;
+using Java.Util.Jar;
 using Prism.Navigation;
+using Newtonsoft.Json;
 
-namespace OfficeAppPrism.ViewModels
+namespace OfficeApp.ViewModels
 {
     public class NewDepartmentPageViewModel : ViewModelBase
     {
@@ -25,14 +25,19 @@ namespace OfficeAppPrism.ViewModels
 
         private async void Save() //Binding SaveCommand Button at XAML 
         {
-            var newDepartment = new Department();
+            var newDepartment = new Department()
             {
-             
-                        // Name = NewName 
-            }
-            
-            //And then serialize the objects before passing to to the http client 
+                Name = NewName,
+                Description = NewDescription,
+                Head = NewHead,
+                Code = NewCode
+                
+            };
 
+            //And then serialize the objects before passing to to the http client 
+            var content = JsonConvert.SerializeObject(newDepartment);
+            await _client.PostAsync(Url, new StringContent(content, Encoding.UTF8, "application/json"));
+            await NavigationService.GoBackAsync();
 
 
         }

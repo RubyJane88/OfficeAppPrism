@@ -4,7 +4,7 @@ using System.Text;
 using Newtonsoft.Json;
 using Prism.Mvvm;
 
-namespace OfficeAppPrism.Models
+namespace OfficeApp.Models
 {
     public class Department: BindableBase
 

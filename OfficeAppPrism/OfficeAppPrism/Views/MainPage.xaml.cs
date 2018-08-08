@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace OfficeAppPrism.Views
+namespace OfficeApp.Views
 {
 	public partial class MainPage : ContentPage
 	{

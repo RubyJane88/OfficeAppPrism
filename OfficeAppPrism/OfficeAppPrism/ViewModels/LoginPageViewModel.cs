@@ -4,7 +4,7 @@ using System.Text;
 using Prism.Commands;
 using Prism.Navigation;
 
-namespace OfficeAppPrism.ViewModels
+namespace OfficeApp.ViewModels
 {
     public class LoginPageViewModel : ViewModelBase
 

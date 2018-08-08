@@ -4,7 +4,7 @@ using Prism.Ioc;
 using UIKit;
 
 
-namespace OfficeAppPrism.iOS
+namespace OfficeApp.iOS
 {
     // The UIApplicationDelegate for the application. This class is responsible for launching the 
     // User Interface of the application, as well as listening (and optionally responding) to 

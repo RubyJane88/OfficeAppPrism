@@ -13,15 +13,42 @@
             <RowDefinition Height="*" />
             <RowDefinition Height="5" />
             <RowDefinition Height="*" />
-
         </Grid.RowDefinitions>
 
+        <Label
+            Grid.Row="0"
+            FontSize="Large"
+            HorizontalOptions="Center"
+            Text="Our Office" />
 
+        <ListView
+            x:Name="DeptListView"
+            Grid.Row="2"
+            HasUnevenRows="True"
+            ItemsSource="{Binding ObservableDepartments}">
 
+            <ListView.GestureRecognizers>
+                <TapGestureRecognizer />
+            </ListView.GestureRecognizers>
 
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell
+                        Command="{Binding BindingContext.EditDeleteCommand, Source={x:Reference DeptListView}}"
+                        CommandParameter="{Binding .}"
+                        Detail="{Binding Description}"
+                        Text="{Binding Name}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
 
-
-
+        <Button
+            Grid.Row="3"
+            BackgroundColor="Crimson"
+            Command="{Binding ToNewPageCommand}"
+            HorizontalOptions="End"
+            Text="Add"
+            TextColor="Wheat"
+            VerticalOptions="Center" />
     </Grid>
-
 </ContentPage>
